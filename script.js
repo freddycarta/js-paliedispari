@@ -20,11 +20,37 @@ function invertiParola(testo) {
 
 console.log(isPalindrome('anna'))
 
-// Pari e dispari
+// PARI E DISPARI
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
   }
+
+function isEven(num) {
+    return num % 2 === 0
+}
+
+function isOdd(num) {
+    return !isEven(num)
+}
+
+
+const scelta = prompt('scegli "pari o "dispari"')
+console.log (scelta) 
+const numeroUtente = parseInt (prompt('scrivi un numero da 1 a 5'))
+console.log (numeroUtente)
+const numeroPC = getRandomIntInclusive(1, 5)
+console.log(numeroPC)
+
+const somma = numeroPC + numeroUtente
+
+if( (scelta === 'pari' && isEven(somma)) ||
+ (scelta === 'dispari' && isOdd(somma))) {
+console.log('hai vinto')
+} else {
+    console.log('hai perso')
+}
+
 
