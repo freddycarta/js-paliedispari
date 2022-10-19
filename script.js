@@ -8,17 +8,17 @@ function isPalindrome (parola) {
 
 function invertiParola(testo) {
     const caratteriDiparola = testo.split('')
-    // console.log(caratteriDiparola)
+    console.log(caratteriDiparola)
     const caratteriInvertiti = caratteriDiparola.reverse()
-    // console.log(caratteriInvertiti)
+    console.log(caratteriInvertiti)
     const parolainvertita = caratteriInvertiti.join('')
-    // console.log(parolainvertita)
+    console.log(parolainvertita)
 
     return parolainvertita
 }
 
 
-console.log(isPalindrome('anna'))
+console.log(isPalindrome('paolo'))
 
 // PARI E DISPARI
 
@@ -40,9 +40,9 @@ function isOdd(num) {
 const scelta = prompt('scegli "pari o "dispari"')
 // console.log (scelta) 
 const numeroUtente = parseInt (prompt('scrivi un numero da 1 a 5'))
-// console.log (numeroUtente)
+console.log (numeroUtente)
 const numeroPC = getRandomIntInclusive(1, 5)
-// console.log(numeroPC)
+console.log(numeroPC)
 
 const somma = numeroPC + numeroUtente
 
